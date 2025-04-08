@@ -46,7 +46,7 @@ function RegistrationForm() {
     e.preventDefault();
     if (!validate()) return;
 
-    alert(`🎉 Welcome, ${formData.fullName}! Registration successful.`);
+    alert(` Welcome, ${formData.fullName}! Registration successful.`);
     setFormData({ fullName: '', email: '', password: '' });
   };
 
@@ -113,8 +113,7 @@ function RegistrationForm() {
   return (
     <div style={styles.container}>
       <form style={styles.formBox} onSubmit={handleSubmit}>
-        <h2 style={styles.title}>
-          Create Your Account</h2>
+        <h2 style={styles.title}>Create Your Account</h2>
 
         <input
           type="text"
